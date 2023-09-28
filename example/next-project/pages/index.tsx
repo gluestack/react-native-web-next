@@ -1,5 +1,5 @@
 import { View } from 'react-native';
-import { Image } from '@react-native-web-next/image';
+import { Image } from 'react-native-web-next-image';
 
 export default function Home() {
   return (

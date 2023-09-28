@@ -1,5 +1,5 @@
 {
-  "name": "@react-native-web-next/image",
+  "name": "react-native-web-next-image",
   "version": "0.1.0-alpha.1",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

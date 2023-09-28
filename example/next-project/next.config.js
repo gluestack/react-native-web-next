@@ -4,7 +4,7 @@ const { withExpo } = require('@expo/next-adapter');
 const withTM = require('next-transpile-modules')([
   'react-native-web',
   'react-native',
-  '@react-native-web-next/image'
+  'react-native-web-next-image',
 ]);
 const nextConfig = {
   typescript: {
@@ -14,7 +14,6 @@ const nextConfig = {
   webpack5: true,
   webpack: (config, { isServer }) => {
     config.resolve.fallback = { fs: false };
-
 
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
