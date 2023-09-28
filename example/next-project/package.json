@@ -26,6 +26,7 @@
     "typescript": "latest"
   },
   "peerDependencies": {
-    "react-native-web-next-image": "*"
+    "react-native-web-next-image": "*",
+    "react-native-web-next-link": "*"
   }
 }

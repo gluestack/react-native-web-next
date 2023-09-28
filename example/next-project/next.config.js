@@ -5,6 +5,7 @@ const withTM = require('next-transpile-modules')([
   'react-native-web',
   'react-native',
   'react-native-web-next-image',
+  'react-native-web-next-link',
 ]);
 const nextConfig = {
   typescript: {
