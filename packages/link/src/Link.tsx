@@ -18,10 +18,8 @@ export const Link = forwardRef(({ children, ...props }: any, ref: any) => {
     ...remProps
   } = props;
 
-  const [focused, setFocused] = React.useState(remProps.isFocused ?? false);
-
   return (
-    <Pressable focusable={false} isFocused={focused} {...remProps}>
+    <Pressable focusable={false} tabIndex={-1} {...remProps}>
       <NextLink
         ref={ref}
         replace={replace}
@@ -32,14 +30,8 @@ export const Link = forwardRef(({ children, ...props }: any, ref: any) => {
         passHref={passHref}
         locale={locale}
         href={href}
-        onFocus={() => {
-          setFocused(true);
-          onFocus?.();
-        }}
-        onBlur={() => {
-          setFocused(false);
-          onBlur?.();
-        }}
+        onFocus={onFocus}
+        onBlur={onBlur}
       >
         {children}
       </NextLink>
