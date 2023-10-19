@@ -1,27 +1,27 @@
-# react-native-web-next-link
+# react-native-web-react-router-link
 
 ## Installation
 
-To use react-native-web-next-link components, all you need to do is install the
-`react-native-web-next-link` package:
+To use react-native-web-react-router-link components, all you need to do is install the
+`react-native-web-react-router-link` package:
 
 ```sh
-$ yarn add react-native-web-next-link
+$ yarn add react-native-web-react-router-link
 
 # or
 
-$ npm i react-native-web-next-link
+$ npm i react-native-web-react-router-link
 ```
 
 ## Usage
 
-This is an Image component which supports the `react-native Link` API which internally renders NextImage
+This is a Link component which supports the `react-router Link` API which internally renders react-router Link component.
 
 ```jsx
-import { Link } from 'react-native-web-next-link';
+import { Link } from 'react-native-web-react-router-link';
 
 // Write this code snippet at the root of your application
 function App({ children }) {
-  return <Link href="https://nextjs.org/docs">JDHJHD</Link>;
+  return <Link href="https://reactrouter.com/en/main/components/link">Link</Link>;
 }
 ```
