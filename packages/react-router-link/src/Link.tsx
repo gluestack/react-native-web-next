@@ -8,7 +8,7 @@ export const Link = forwardRef(({ children, ...props }: any, ref: any) => {
   const {
     onFocus,
     onBlur,
-    to,
+    href,
     relative,
     preventScrollReset,
     replace,
@@ -21,9 +21,10 @@ export const Link = forwardRef(({ children, ...props }: any, ref: any) => {
   return (
     <Pressable focusable={false} tabIndex={-1} {...remProps}>
       <RRLink
+        style={{ textDecoration: "none" }}
         onFocus={onFocus}
         onBlur={onBlur}
-        to={to}
+        to={href}
         ref={ref}
         relative={relative}
         preventScrollReset={preventScrollReset}
