@@ -21,6 +21,7 @@ export const Link = forwardRef(({ children, ...props }: any, ref: any) => {
   return (
     <Pressable focusable={false} tabIndex={-1} {...remProps}>
       <NextLink
+        style={{ textDecoration: 'none' }}
         ref={ref}
         replace={replace}
         scroll={scroll}
